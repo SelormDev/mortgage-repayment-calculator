@@ -1,35 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+      Mortgage Calculator Clear All Mortgage Amount Mortgage Term Interest Rate
+      Mortgage Type Repayment Interest Only Calculate Repayments
+      {/* Empty results start */}
+      Results shown here Complete the form and click “calculate repayments” to
+      see what your monthly repayments would be.
+      {/* Empty results end */}
+      {/* Completed results start */}
+      Your results Your results are shown below based on the information you
+      provided. To adjust the results, edit the form and click “calculate
+      repayments” again. Your monthly repayments Total you&aps;ll repay over the
+      term
+      {/* Completed results end */}
+      <div className="attribution">
+        Challenge by{" "}
+        <a href="https://www.frontendmentor.io?ref=challenge">
+          Frontend Mentor
         </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        . Coded by <a href="#">Your Name Here</a>.
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
